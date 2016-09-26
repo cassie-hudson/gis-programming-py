@@ -69,3 +69,17 @@ def f1():
 
 #Main must be invoked at the end
 main();
+
+
+def main():
+    n1 = 1;
+    n2 = 2;
+    f1 (n1,n2);
+    f1 (1,2);
+    f1 (100, 1000);
+
+def f1(a,b):
+    sum = a+b;
+    print (sum);
+
+main();
