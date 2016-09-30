@@ -1,7 +1,138 @@
+#Algorithm workbench
+#1. Height
+height = input("Please enter your height in inches: ")
+print str(height), 'inches'
+
+#2. Favorite color
+color = raw_input("Please enter your favorite color: ")
+print color
+
+#3. Assignment Statements
+a=0
+b=0
+
+b = a + 2
+print b
+a = b*4
+print a
+b=a/3.14
+print b
+a=b-8
+print a
+
+#4. What are the results?
+w = 5
+x = 4
+y = 8
+z = 2
+
+result = x + y
+print result
+result = z * 2
+print result
+result = y/x
+print result
+result = y - z
+print result
+result = w//z
+print result
+
+#5.
+total = 10 + 14
+print total
+
+#6.
+down_payment = input("Please enter your down payment: ")
+due = total - down_payment
+
+#7.
+subtotal = input('Please enter the subtotal: ')
+total = subtotal * 0.15
+
+#8.
+a = 5
+b = 2
+c = 3
+
+result = a+b+c
+print(result)
+
+#9.
+
+num = 99
+num = 5
+print(num)
+
+#10.
+sales = format(100000.2135148, '.2f')
+print sales
+
+#11.
+number = format(1234567.456, ',.1f')
+
+#12.
+print('George', 'John', 'Paul', 'Ringo')
+
+
+
+#Formatting integers
+print(format(12345, 'd'))
+print(format(12345, ',d'))
+print(format(12345, '10d')) #10 spaces wide
+
+#Specifying a minimum field width (useful for printing numbers of different lengths in columns)
+
+num1 = 127.899
+num2 = 3465.148
+num3 = 3.776
+num4 = 264.821
+num5 = 88.081
+num6 = 799.999
+
+
+print(format(num1, '7.2f'))
+print(format(num2, '7.2f'))
+print(format(num3, '7.2f'))
+print(format(num4, '7.2f'))
+print(format(num5, '7.2f'))
+print(format(num6, '7.2f'))
+
+#Formatting float point numbers as a percentage
+print(format(0.5, '%'))
+print(format(0.5, '.0%'))
+
+monthly_pay = 5000.0
+annual_pay = monthly_pay * 12
+print 'Your annual pay is $', \
+    format(annual_pay, ',.2f')
+
+#Displaying floating point numbers
+amount_due = 5000.0
+monthly_payment = amount_due/12
+print'The monthly payment is', monthly_payment
+#Use the format function to change the number of decimal places
+print'The monthly payment is', format(monthly_payment, '.2f')
+#Use the format function to display in scientific notation
+print'The monthly payment is', format(monthly_payment, 'e')
+print'The monthly payment is', format(monthly_payment, '.2e')
+
+#Use the format function to insert comma separators
+print'The monthly payment is', format(1234567.9875, ',.2f')
+
+#String concatenation
+
+print('This is ' + 'one string.')
+
+print('Enter the amount of ' +\
+      'sales for each day and '+\
+    'press Enter.')
+
+
 #Prints on a new line, \t adds a tab
 
 print'One\nTwo\nThree'
 
+print('Mon\tTues\tThurs')
 
 
 #Converting a math problem to a programming statement
