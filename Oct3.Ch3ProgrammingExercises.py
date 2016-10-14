@@ -1,19 +1,3 @@
-#12. Software Sales
-packages = input("How many packages would you like to purchase?: ")
-cost = 99
-
-if packages > 100:
-    amt = cost*.6
-elif 50 <= packages < 100:
-    amt = cost*.7
-elif 20 <= packages < 50:
-    amt = cost*.8
-elif 10 <= packages <20:
-    amt = cost*.9
-else:
-    amt = 99
-print "The total amount of your purchase is $" +str((amt*packages, f))+"."
-
 #1. Day of the Week
 weekDay = input("Please choose a number between 1 and 7: ")
 if weekDay == 1:
@@ -169,3 +153,63 @@ elif books >= 2:
     "You earned 5 points!"
 elif books < 2:
     "You have 0 points..."
+
+#12. Software Sales
+packages = input("How many packages would you like to purchase?: ")
+cost = 99
+
+if packages > 100:
+    amt = cost*.6
+elif 50 <= packages < 100:
+    amt = cost*.7
+elif 20 <= packages < 50:
+    amt = cost*.8
+elif 10 <= packages <20:
+    amt = cost*.9
+else:
+    amt = 99
+print "The total amount of your purchase is $" +str((amt*packages, f))+"."
+
+#13. Shipping Charges
+
+weight = input("Please enter the weight of the item you would like to ship: ")
+
+if weight <= 2:
+    pp = 1.5
+elif weight > 2 and weight < 6:
+    pp = 3
+elif weight > 6 and weight < 10:
+    pp = 4
+else:
+    pp = 4.75
+
+charge = weight * pp
+
+print "The shipping cost is $",(format(charge, '.2f')) , "."
+
+#14. Body mass index
+wt, ht = input("Please enter your weight in pounds and height in inches, separated by a comma: ")
+bmi = wt * (703/ht**2)
+
+if bmi < 18.5:
+    print "Underweight"
+elif bmi < 25 and bmi >= 18.5:
+    print "Optimal weight"
+else:
+    print "Overweight"
+
+#15. Time Calculator
+
+seconds = input("Please enter some number of seconds: ")
+
+if seconds < 60:
+    print seconds
+elif seconds >= 60 and seconds < 3600:
+    minutes = seconds/60
+    print minutes, "minutes"
+elif seconds >= 3600 and seconds < 86400:
+    hours = seconds/3600
+    print hours, "hours"
+elif seconds >=86400:
+    days = seconds/86400
+    print days, "days"
