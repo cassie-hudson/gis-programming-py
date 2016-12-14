@@ -1,5 +1,95 @@
 from __future__ import print_function
 
+#5-22
+
+DISCOUNT_PERCENTAGE = 0.20
+
+def main():
+    reg_price = get_regular_price()
+    sale_price = reg_price - discount(reg_price)
+    print(sale_price)
+
+def get_regular_price():
+    price = float(input("Enter the regular price: "))
+    return price
+
+def discount(price):
+    return price * DISCOUNT_PERCENTAGE
+
+main()
+
+#Program 5-21 Value-Returning Functions
+def main():
+
+    first_age = input("Enter age: ")
+    second_age = input("Another age: ")
+    total = sum(first_age, second_age)
+    print("Together you are", total, "years old.")
+
+def sum(num1, num2):
+    result = num1 + num2
+    return result
+main()
+
+
+#Program 5-9
+
+def main():
+    first_name = raw_input("Enter your first name: ")
+    last_name = raw_input("Enter your last name: ")
+    print("Your name reversed is: ")
+    reverse_name(first_name,last_name)
+
+def reverse_name(first, last):
+    print(last, first)
+
+main()
+
+
+main()
+#Program 5-8
+
+def main():
+    print("The sum of 12 and 45 is")
+    show_sum(12, 45)
+
+def show_sum(num1, num2):
+    result = num1 + num2
+    print(result)
+
+main()
+#Program 5-15
+
+def main():
+    intro()
+    cups_needed = input("Enter the number of cups: ")
+    cups_to_ounces(cups_needed)
+
+def intro():
+    print("This program converts measurements\nin cups to fluid ounces. For your\n"
+          "reference the formula is:\n1 cup = 8 fluid ounces.")
+    print()
+
+def cups_to_ounces(cups):
+    ounces = cups * 8
+    print("That converts to", ounces, "ounces.")
+
+main()
+
+
+
+
+#Program 5-6
+
+def main():
+    value = 5
+    show_double(value)
+
+def show_double(number):
+    result = number * 2
+    print(result)
+
+main()
 
 
 #Program 5-3
