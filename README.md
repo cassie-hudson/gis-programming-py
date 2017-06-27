@@ -1,0 +1,1 @@
+This is a collection of files developed for GIS Programming. Exercises are labeled as class exercises or textbook (using Tony Gaddis's "Starting Out With Python").
